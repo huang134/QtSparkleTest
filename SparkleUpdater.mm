@@ -74,6 +74,7 @@
     Q_UNUSED(updater)
     // qDebug() << u->getImmediateInstallAndRelaunch();
     // if (u->getImmediateInstallAndRelaunch()) [invocation invoke];
+    [invocation invoke];
 }
 
 - (void)updater:(SUUpdater *)updater willInstallUpdate:(SUAppcastItem *)item
@@ -97,10 +98,10 @@ CSparkleUpdater::CSparkleUpdater()
 {
     SparkleDelegate *delegate = [[SparkleDelegate alloc] init];
     [delegate setUpdater:this];
-    // [[SUUpdater sharedUpdater] setDelegate:delegate];
+    [[SUUpdater sharedUpdater] setDelegate:delegate];
 
-    // [SUUpdater sharedUpdater].automaticallyChecksForUpdates = YES;
-    // [SUUpdater sharedUpdater].automaticallyDownloadsUpdates = YES;
+    [SUUpdater sharedUpdater].automaticallyChecksForUpdates = YES;
+    [SUUpdater sharedUpdater].automaticallyDownloadsUpdates = YES;
 }
 
 CSparkleUpdater::~CSparkleUpdater()
