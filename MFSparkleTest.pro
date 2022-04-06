@@ -35,7 +35,7 @@ LIBS += -framework ApplicationServices
 LIBS += -framework Sparkle
 
 QMAKE_MAC_SDK = macosx10.13
-QMAKE_INFO_PLIST = Info.1.0.0.plist
+QMAKE_INFO_PLIST = Info.1.5.0.plist
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

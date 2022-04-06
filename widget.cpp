@@ -6,8 +6,8 @@
 #include <QPropertyAnimation>
 #include <QTimer>
 
-#define VERSION_1_0_0 "1.0.0"
-// #define VERSION_1_5_0 "1.5.0"
+// #define VERSION_1_0_0 "1.0.0"
+#define VERSION_1_5_0 "1.5.0"
 // #define VERSION_2_0_0 "2.0.0"
 
 Widget::Widget(QWidget *parent)
